@@ -7,7 +7,20 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.eventive.ui.HomeFragment"
+        android:name="com.example.eventive.ui.home.HomeFragment"
         android:label="@string/home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_eventFragment"
+            app:destination="@id/eventFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/eventFragment"
+        android:name="com.example.eventive.ui.event.EventFragment"
+        android:label="@string/event"
+        tools:layout="@layout/fragment_event" >
+        <argument
+            android:name="event"
+            app:argType="com.example.eventive.domain.models.Event" />
+    </fragment>
 </navigation>

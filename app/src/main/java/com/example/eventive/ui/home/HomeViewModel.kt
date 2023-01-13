@@ -1,4 +1,4 @@
-package com.example.eventive.ui
+package com.example.eventive.ui.home
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
