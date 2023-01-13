@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Eventive</string>
     <string name="home">Home</string>
+    <string name="default_location">New York, NY</string>
 </resources>
