@@ -3,6 +3,7 @@ package com.example.eventive.ui.adapters
 import android.os.Build
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.view.animation.AnimationUtils
 import androidx.annotation.RequiresApi
 import androidx.recyclerview.widget.RecyclerView.Adapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
@@ -37,7 +38,11 @@ class EventAdapter(private val events: List<Event>, private val clickListener: (
     }
 
     @RequiresApi(Build.VERSION_CODES.O)
-    override fun onBindViewHolder(holder: EventViewHolder, position: Int) = holder.bind(events[position])
+    override fun onBindViewHolder(holder: EventViewHolder, position: Int) {
+        holder.itemView.animation =
+            AnimationUtils.loadAnimation(holder.itemView.context, R.anim.slide_in_anim)
+        holder.bind(events[position])
+    }
 
     override fun getItemCount() = events.size
 }
