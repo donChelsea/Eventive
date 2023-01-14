@@ -8,5 +8,6 @@ data class Venue(
     val id: Int,
     val name: String,
     val location: String,
+    val address: String,
     val hasUpcomingEvents: Boolean,
 ) : Parcelable

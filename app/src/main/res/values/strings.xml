@@ -4,4 +4,8 @@
     <string name="default_location">New York, NY</string>
     <string name="event">Event</string>
     <string name="time_and_location">%1$s • %2$s</string>
+    <string name="performers">Performers</string>
+    <string name="see_all_shows">See more shows</string>
+    <string name="interested">Interested</string>
+    <string name="attend">Attend</string>
 </resources>

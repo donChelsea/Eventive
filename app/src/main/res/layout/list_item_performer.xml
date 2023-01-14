@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="@dimen/content_margin_8"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/name"
+        style="@style/TextAppearance.MaterialComponents.Body1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/content_margin_12"
+        app:drawableLeftCompat="@drawable/ic_person"
+        app:drawableTint="@color/teal_700"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/see_all_shows"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Performer Name" />
+
+    <TextView
+        android:id="@+id/see_all_shows"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/see_all_shows"
+        android:textColor="@color/teal_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/name"
+        android:visibility="invisible"
+        android:layout_marginHorizontal="@dimen/content_margin_12"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

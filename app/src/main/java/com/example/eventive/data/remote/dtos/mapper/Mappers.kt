@@ -27,5 +27,6 @@ fun VenueDto.toDomain() = Venue(
     name = name,
     id = id,
     location = location,
+    address = address,
     hasUpcomingEvents = hasUpcomingEvents
 )

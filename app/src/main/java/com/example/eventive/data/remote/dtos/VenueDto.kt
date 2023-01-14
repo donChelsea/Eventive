@@ -7,6 +7,7 @@ data class VenueDto(
     val name: String,
     @SerializedName("display_location")
     val location: String,
+    val address: String,
     @SerializedName("has_upcoming_events")
     val hasUpcomingEvents: Boolean,
 )

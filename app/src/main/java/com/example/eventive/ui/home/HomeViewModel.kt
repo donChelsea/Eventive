@@ -17,8 +17,8 @@ class HomeViewModel @Inject constructor(
     private val repository: EventsRepository,
 ) : ViewModel() {
 
-    private val _state: MutableStateFlow<EventsUiState> = MutableStateFlow(EventsUiState())
-    val state: StateFlow<EventsUiState>
+    private val _state: MutableStateFlow<HomeUiState> = MutableStateFlow(HomeUiState())
+    val state: StateFlow<HomeUiState>
         get() = _state
 
     init {
@@ -38,6 +38,6 @@ class HomeViewModel @Inject constructor(
     }
 }
 
-data class EventsUiState(
+data class HomeUiState(
     val events: List<Event> = emptyList()
 )
